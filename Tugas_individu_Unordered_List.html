@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Unordered List dan Ordered List</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: rgb(199, 199, 199); font-family: 'Times New Roman', serif; }
+        
+        h1, h2 { text-align: center; text-indent: 45px; }
+        h1 { color: #004080; }
+        h2 { color: blue; }
+        
+        .jadwal-container { display: flex; justify-content: space-evenly; flex-wrap: wrap; }
+        .jadwal-hari { margin: 10px; padding: 10px; width: 200px; text-align: center; }
+        
+        ul { margin-left: 20px; margin-bottom: 15px; }
+        ul.circle { list-style-type: circle; }
+        ul.square { list-style-type: square; }
+        ul.none { list-style-type: none; }
+        ul.disc { list-style-type: disc; }
+    
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Styling untuk marquee */
+        .marquee {
+            font-size: 18px;
+            color: white;
+            background-color: #004080;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        ol { margin-left: 60px; margin-bottom: 15px; }
+
+        /* Styling untuk footer */
+        footer {
+            text-align: center;
+            background-color: #004080;
+            padding: 15px;
+            color: white;
+            margin-top: 7%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Marquee -->
+    <div class="marquee">
+        <marquee behavior="alternate" direction="right">Selamat Datang di Jadwal Pelajaran X RPL!</marquee>
+    </div>
+    <center>
+        <img src="Logo WEka" width="5%"  alt="Image Placeholder">
+    </center>
+
+    <h1>Jadwal Pelajaran X RPL</h1>
+    <div class="jadwal-container">
+        <div class="jadwal-hari">
+            <h2>Hari Senin</h2>
+            <!--unordered list-->
+            <ul class="disc">
+                <li>PJOK</li>
+                <li>P.IPAS</li>
+                <li>Mandarin</li>
+                <li>PPLG 1</li>
+            </ul>
+        </div>
+        <div class="jadwal-hari">
+            <h2>Hari Selasa</h2>
+            <ul class="square">
+                <li>P.IPAS</li>
+                <li>INFORMATIKA</li>
+                <li>BK</li>
+                <li>PPLG 1</li>
+            </ul>
+        </div>
+        <div class="jadwal-hari">
+            <h2>Hari Rabu</h2>
+            <ul class="circle">
+                <li>Bahasa Indonesia</li>
+                <li>Sejarah</li>
+                <li>Matematika</li>
+                <li>PPLG 2</li>
+            </ul>
+        </div>
+        <div class="jadwal-hari">
+            <h2>Hari Kamis</h2>
+            <ul class="none">
+                <li>Bahasa Inggris</li>
+                <li>Seni Budaya</li>
+                <li>PABP</li>
+                <li>Bahasa Indonesia</li>
+            </ul>
+        </div>
+        <div class="jadwal-hari">
+            <h2>Hari Jumat</h2>
+            <ul class="disc">
+                <li>Bahasa Inggris</li>
+                <li>PPLG 2</li>
+                <li>Matematika</li>
+            </ul>
+        </div>
+    </div>
+
+    <h1>Jadwal Piket</h1>
+    <!-- Orderer List -->
+    <ol>
+        <li>Senin: Yudya, yudya yudya</li>
+        <li>Selasa: Yudya, yudya yudya</li>
+        <li>Rabu: Yudya, yudya yudya</li>
+        <li>Kamis: Yudya, yudya yudya</li>
+        <li>Jumat: Yudya, yudya yudya</li>
+    </ol>
+
+
+    <footer>
+        <p>Yudya Farihah Kelas 10 RPL</p>
+    </footer>
+</body>
+</html>
